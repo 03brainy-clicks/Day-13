@@ -26,7 +26,7 @@ search.addEventListener("click", function () {
       <div class="flex">
       <div><img src="images/newimages/${desc}.png" alt="" /></div>
           <div>
-              
+
               <p>
                  Weather :  ${desc}<br /> Temperature : ${Math.floor(
         temp - 273.15
@@ -40,7 +40,7 @@ search.addEventListener("click", function () {
           </div>
           <div>
               <p>
-              wind : ${wind}(mps) <br /> 
+              wind : ${wind}(mps) <br />
               </p>
           </div>
       </div>
@@ -103,7 +103,7 @@ function Delhi() {
       let temp = data["main"]["temp"];
       let desc = data["weather"][0]["description"];
       document.getElementById("r1c3").innerHTML = `
-      <img src="images/newimages/${desc}.png" alt="" /> 
+      <img src="images/newimages/${desc}.png" alt="" />
                         <h3>${name}</h3>
                         <p>
                             ${desc}<br /> ${Math.floor(temp - 273.15)} °C
